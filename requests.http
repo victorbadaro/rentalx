@@ -1,0 +1,25 @@
+@hostname = http://localhost
+@port = 3333
+@baseUrl = {{hostname}}:{{port}}
+
+GET {{baseUrl}}/categories
+
+###
+
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "name": "Sedan",
+  "description": "Categoria de carro SUV"
+}
+
+###
+
+POST {{baseUrl}}/specifications
+Content-Type: application/json
+
+{
+  "name": "Câmbio automático",
+  "description": "Carro com câmbio automático"
+}
