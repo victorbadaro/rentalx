@@ -1,25 +1,40 @@
+### Variables
 @hostname = http://localhost
 @port = 3333
 @baseUrl = {{hostname}}:{{port}}
 
+### GET categories
 GET {{baseUrl}}/categories
 
-###
-
+### POST categories
 POST {{baseUrl}}/categories
 Content-Type: application/json
 
 {
-  "name": "Sedan",
-  "description": "Categoria de carro SUV"
+  "name": "",
+  "description": ""
 }
 
-###
+### POST categories/import
+POST {{baseUrl}}/categories/import
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="text"
+
+title
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename=""
+Content-Type:
+
+< ./
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### POST specifications
 POST {{baseUrl}}/specifications
 Content-Type: application/json
 
 {
-  "name": "Câmbio automático",
-  "description": "Carro com câmbio automático"
+  "name": "",
+  "description": ""
 }
