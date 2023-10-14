@@ -1,3 +1,5 @@
+import { inject, injectable } from "tsyringe";
+
 import { ISpecificationsRepository } from "../../repositories/ISpecificationsRepository";
 
 interface IRequest {
@@ -5,12 +7,12 @@ interface IRequest {
   description: string;
 }
 
+@injectable()
 class CreateSpecificationUseCase {
-  private specificationRepository: ISpecificationsRepository;
-
-  constructor(specificationRepository: ISpecificationsRepository) {
-    this.specificationRepository = specificationRepository;
-  }
+  constructor(
+    @inject("SpecificationsRepository")
+    private specificationRepository: ISpecificationsRepository
+  ) { } // eslint-disable-line prettier/prettier
 
   execute({ name, description }: IRequest): void {
     const specificationAlreadyExists =
