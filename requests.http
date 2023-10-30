@@ -3,10 +3,10 @@
 @port = 3333
 @baseUrl = {{hostname}}:{{port}}
 
-### GET categories
+### GET /categories
 GET {{baseUrl}}/categories
 
-### POST categories
+### POST /categories
 POST {{baseUrl}}/categories
 Content-Type: application/json
 
@@ -15,7 +15,7 @@ Content-Type: application/json
   "description": ""
 }
 
-### POST categories/import
+### POST /categories/import
 POST {{baseUrl}}/categories/import
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
@@ -26,11 +26,22 @@ Content-Type:
 < ./
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
-### POST specifications
+### POST /specifications
 POST {{baseUrl}}/specifications
 Content-Type: application/json
 
 {
   "name": "",
   "description": ""
+}
+
+### POST /users
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "",
+  "password": "",
+  "driver_license": ""
 }
