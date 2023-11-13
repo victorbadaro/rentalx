@@ -55,10 +55,10 @@ Ao realizar um aluguel, o status do carro deverá ser alterado para indisponíve
 
 # Devolução de carro
 
-**RF**
+**RF**<br/>
 Deve ser possível realizar a devolução de um carro
 
-**RN**
+**RN**<br/>
 Se o carro for devolvido com menos de 24 horas, deverá ser cobrado diária completa.<br/>
 Ao realizar a devolução, o carro deverá ser liberado para outro aluguel.<br/>
 Ao realizar a devolução, o usuário deverá ser liberado para outro aluguel.<br/>
@@ -69,11 +69,22 @@ Caso haja multa, deverá ser somado ao total do aluguel.
 
 # Listagem de Alugueis para usuário
 
-**RF**
+**RF**<br/>
 Deve ser possível realizar a busca de todos os aluguéis para o usuário
 
-**RN**
+**RN**<br/>
 O usuário deve estar logado na aplicação
+
+# Recuperar Senha
+
+**RF**<br/>
+Deve ser possível o usuário recuperar a senha informando o e-mail.<br/>
+O usuário deve receber um e-mail com o passo a passo para a recuperação da senha.<br/>
+O usuário deve conseguir inserir uma nova senha.
+
+**RN**<br/>
+O usuário precisa informar uma nova senha.<br/>
+O link enviado para a recuperação deve expirar em 3 horas.
 
 ---
 **RF** => Requisitos funcionais<br/>
