@@ -3,3 +3,5 @@ tmp/**/*.*
 
 .env
 coverage
+
+ignite-nodejs.pem
