@@ -1,9 +1,9 @@
 node_modules
 build
 dist
-tmp/**/*.*
-
+tmp/*
+!tmp/.gitkeep
 .env
 coverage
-
+ormconfig.json
 ignite-nodejs.pem
