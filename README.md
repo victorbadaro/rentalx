@@ -1,4 +1,6 @@
-# Cadastro de carro
+# rentx
+
+## Cadastro de carro
 
 **RF**<br/>
 Deve ser possível cadastrar um novo carro.<br/>
@@ -8,7 +10,7 @@ Não deve ser possível cadastar um carro com uma placa já existente.<br/>
 O carro deve ser cadastrado, por padrão, com disponibilidade.<br/>
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
-# Listagem de carros
+## Listagem de carros
 
 **RF**<br/>
 Deve ser possível listar todos os carros disponíveis.<br/>
@@ -19,7 +21,7 @@ Deve ser possível listar todos os carros disponíveis pelo nome do carro.
 **RN**<br/>
 O usuário não precisa estar logado no sistema.
 
-# Cadastro de Especificação no carro
+## Cadastro de Especificação no carro
 
 **RF**<br/>
 Deve ser possível cadastrar uma especificação para um carro.<br/>
@@ -29,7 +31,7 @@ Não deve ser possível cadastrar uma especificação para um carro não cadastr
 Não deve ser possível cadastrar uma especificação já existente para o mesmo carro.<br/>
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
-# Cadastro de imagens do carro
+## Cadastro de imagens do carro
 
 **RF**<br/>
 Deve ser possível cadastrar a imagem do carro.<br/>
@@ -41,7 +43,7 @@ Utilizar o multer para upload dos arquivos
 O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.<br/>
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
-# Aluguel de carro
+## Aluguel de carro
 
 **RF**<br/>
 Deve ser possível cadastrar um aluguel.
@@ -53,7 +55,7 @@ Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para
 O usuário deve estar logado na aplicação.<br/>
 Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
 
-# Devolução de carro
+## Devolução de carro
 
 **RF**<br/>
 Deve ser possível realizar a devolução de um carro
@@ -67,7 +69,7 @@ Caso o horário de devolução seja superior ao horário previsto de entrega, de
 O usuário deve estar logado na aplicação.<br/>
 Caso haja multa, deverá ser somado ao total do aluguel.
 
-# Listagem de Alugueis para usuário
+## Listagem de Alugueis para usuário
 
 **RF**<br/>
 Deve ser possível realizar a busca de todos os aluguéis para o usuário
@@ -75,7 +77,7 @@ Deve ser possível realizar a busca de todos os aluguéis para o usuário
 **RN**<br/>
 O usuário deve estar logado na aplicação
 
-# Recuperar Senha
+## Recuperar Senha
 
 **RF**<br/>
 Deve ser possível o usuário recuperar a senha informando o e-mail.<br/>
