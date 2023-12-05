@@ -3,6 +3,7 @@ import "dotenv/config";
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import "reflect-metadata";
+import rateLimiter from "shared/infra/http/middlewares/rateLimiter";
 import swaggerUI from "swagger-ui-express";
 
 import upload from "@config/upload";
@@ -18,6 +19,7 @@ createConnection();
 
 const app = express();
 
+app.use(rateLimiter);
 app.use(express.json());
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));
 app.use("/avatar", express.static(`${upload.tmpFolder}/avatar`));
