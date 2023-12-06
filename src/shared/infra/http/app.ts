@@ -3,13 +3,13 @@ import "dotenv/config";
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import "reflect-metadata";
-import rateLimiter from "shared/infra/http/middlewares/rateLimiter";
 import swaggerUI from "swagger-ui-express";
 
 import upload from "@config/upload";
 import * as Sentry from "@sentry/node";
 import { ProfilingIntegration } from "@sentry/profiling-node";
 import { AppError } from "@shared/errors/AppError";
+import rateLimiter from "@shared/infra/http/middlewares/rateLimiter";
 import createConnection from "@shared/infra/typeorm";
 
 import "@shared/container";
